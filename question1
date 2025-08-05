@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int M,N;
+    cin>>M>>N;
+    if(M<=0||N<=0||M>10||N>10){
+        cout<<"Invalid Input";
+        return 0;
+    }
+    float matrix[10][10];
+    for(int i=0;i<M;i++){
+        for(int j=0;j<N;j++){
+            cin>>matrix[i][j];
+        }
+    }
+    for(int i=0;i<M;i++){
+        for(int j=0;j<N;j++){
+            cout<<matrix[i][j];
+            if(j!=N-1)cout<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
